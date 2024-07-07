@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block titulo %} Nosotros {% endblock %}
+{%load static%}
+{% block contenido %}  
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="mb-4">Sobre Nosotros</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Nuestra Historia</h2>
+            <p>
+                Fundada en 2022, nuestra librería ha sido un faro para los amantes de los libros en Buenos Aires. Empezamos con una pequeña tienda y, gracias al apoyo de nuestra comunidad, hemos crecido hasta convertirnos en un espacio de referencia para los lectores de todas las edades.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'imagenes/libreria.jpg' %}" class="img-fluid rounded" alt="Nuestra librería">
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6 order-md-2">
+            <h2>Nuestra Misión</h2>
+            <p>
+                En Don Quijote, creemos que los libros tienen el poder de cambiar vidas. Nuestra misión es proporcionar un espacio donde los lectores puedan descubrir nuevas historias, explorar diferentes perspectivas y encontrar inspiración en cada página.
+            </p>
+        </div>
+        <div class="col-md-6 order-md-1">
+            <img src="{% static 'imagenes/personal.jpeg' %}" class="img-fluid rounded" alt="Nuestra misión">
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h2>Nuestro Equipo</h2>
+            <p>
+                Nuestro equipo está compuesto por apasionados del mundo literario que están aquí para ayudarte a encontrar tu próximo libro favorito. Desde recomendaciones personalizadas hasta eventos literarios, estamos dedicados a fomentar una comunidad de lectores entusiastas.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="{% static 'imagenes/libreria2.jpg' %}" class="img-fluid rounded" alt="Nuestro equipo">
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 text-center">
+            <h2>Contáctanos</h2>
+            <p>
+                Si tienes alguna pregunta, sugerencia o simplemente quieres compartir tu amor por los libros, no dudes en ponerte en contacto con nosotros. ¡Estamos aquí para ayudarte!
+            </p>
+        </div>
+    </div>
+</div>
+<footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-map-marker-alt"></i> Dirección: Calle Principal 123, Ciudad</li>
+                    <li><i class="fas fa-phone"></i> Teléfono: (123) 456-7890</li>
+                    <li><i class="fas fa-envelope"></i> Email: info@libreria.com</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Horario de Atención</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-clock"></i> Lunes a Viernes: 9:00 AM - 8:00 PM</li>
+                    <li><i class="fas fa-clock"></i> Sábado: 10:00 AM - 6:00 PM</li>
+                    <li><i class="fas fa-clock"></i> Domingo: Cerrado</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <p>&copy; 2024 Librería. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}

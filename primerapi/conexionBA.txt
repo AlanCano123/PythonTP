@@ -1,0 +1,12 @@
+1-Para correr la base de datos crear una base llamada "libreria"
+2-setear la conexion en:
+DATABASE del archivo settings.py
+3-correr el siguiente comando: 
+primerapi\api> py manage.py makemigrations
+4-correr el siguiente comando:
+primerapi\api> py manage.py migrate
+La tabla que se crea es libreria_libro
+
+http://127.0.0.1:8000/admin
+usuario: alan
+password: alan
